@@ -13,6 +13,10 @@
 		C736D4941E56DB1800A8E9D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C736D4921E56DB1800A8E9D2 /* Main.storyboard */; };
 		C736D4961E56DB1800A8E9D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C736D4951E56DB1800A8E9D2 /* Assets.xcassets */; };
 		C736D4991E56DB1800A8E9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C736D4971E56DB1800A8E9D2 /* LaunchScreen.storyboard */; };
+		C736D4A21E56DB2F00A8E9D2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C736D4A11E56DB2F00A8E9D2 /* ImageIO.framework */; };
+		C736D4A51E56DF8800A8E9D2 /* HLImageInfoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C736D4A41E56DF8800A8E9D2 /* HLImageInfoUtils.m */; };
+		C736D4A71E56E72200A8E9D2 /* 1024.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C736D4A61E56E72200A8E9D2 /* 1024.JPG */; };
+		C799DA2A1E570476007BC8BD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C799DA291E570476007BC8BD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		C736D4951E56DB1800A8E9D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C736D4981E56DB1800A8E9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C736D49A1E56DB1800A8E9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C736D4A11E56DB2F00A8E9D2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C736D4A31E56DF8800A8E9D2 /* HLImageInfoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLImageInfoUtils.h; sourceTree = "<group>"; };
+		C736D4A41E56DF8800A8E9D2 /* HLImageInfoUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLImageInfoUtils.m; sourceTree = "<group>"; };
+		C736D4A61E56E72200A8E9D2 /* 1024.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1024.JPG; sourceTree = "<group>"; };
+		C799DA291E570476007BC8BD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C799DA2A1E570476007BC8BD /* CoreLocation.framework in Frameworks */,
+				C736D4A21E56DB2F00A8E9D2 /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,7 @@
 			children = (
 				C736D4881E56DB1800A8E9D2 /* EditImageGPSDemo */,
 				C736D4871E56DB1800A8E9D2 /* Products */,
+				C736D4A01E56DB2F00A8E9D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,10 +74,13 @@
 				C736D48D1E56DB1800A8E9D2 /* AppDelegate.m */,
 				C736D48F1E56DB1800A8E9D2 /* ViewController.h */,
 				C736D4901E56DB1800A8E9D2 /* ViewController.m */,
+				C736D4A31E56DF8800A8E9D2 /* HLImageInfoUtils.h */,
+				C736D4A41E56DF8800A8E9D2 /* HLImageInfoUtils.m */,
 				C736D4921E56DB1800A8E9D2 /* Main.storyboard */,
 				C736D4951E56DB1800A8E9D2 /* Assets.xcassets */,
 				C736D4971E56DB1800A8E9D2 /* LaunchScreen.storyboard */,
 				C736D49A1E56DB1800A8E9D2 /* Info.plist */,
+				C736D4A61E56E72200A8E9D2 /* 1024.JPG */,
 				C736D4891E56DB1800A8E9D2 /* Supporting Files */,
 			);
 			path = EditImageGPSDemo;
@@ -77,6 +92,15 @@
 				C736D48A1E56DB1800A8E9D2 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C736D4A01E56DB2F00A8E9D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C799DA291E570476007BC8BD /* CoreLocation.framework */,
+				C736D4A11E56DB2F00A8E9D2 /* ImageIO.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +134,8 @@
 				TargetAttributes = {
 					C736D4851E56DB1800A8E9D2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 4AW78593E8;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -139,6 +164,7 @@
 			files = (
 				C736D4991E56DB1800A8E9D2 /* LaunchScreen.storyboard in Resources */,
 				C736D4961E56DB1800A8E9D2 /* Assets.xcassets in Resources */,
+				C736D4A71E56E72200A8E9D2 /* 1024.JPG in Resources */,
 				C736D4941E56DB1800A8E9D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C736D4911E56DB1800A8E9D2 /* ViewController.m in Sources */,
+				C736D4A51E56DF8800A8E9D2 /* HLImageInfoUtils.m in Sources */,
 				C736D48E1E56DB1800A8E9D2 /* AppDelegate.m in Sources */,
 				C736D48B1E56DB1800A8E9D2 /* main.m in Sources */,
 			);
@@ -270,10 +297,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AW78593E8;
 				INFOPLIST_FILE = EditImageGPSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohu.EditImageGPSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "48a5436e-cfb6-41c8-9aad-31d0c2f08be7";
+				PROVISIONING_PROFILE_SPECIFIER = WeiChaoSOHUDevelopStarProfile;
 			};
 			name = Debug;
 		};
@@ -281,7 +312,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EditImageGPSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohu.EditImageGPSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,6 +340,7 @@
 				C736D49F1E56DB1800A8E9D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -34,5 +34,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>@&quot;请允许使用相册功能&quot;</string>
+	<key>NSCameraUsageDescription</key>
+	<string>@&quot;请允许使用相册功能&quot;</string>
 </dict>
 </plist>
